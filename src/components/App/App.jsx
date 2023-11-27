@@ -15,13 +15,19 @@ function App() {
                 <h1 className="App-title">GitHub Student List</h1>
                 </header>
                 <br/>
+
                 <Nav />
+
                 <Route exact path="/about">
                     <About /> 
                 </Route>
+
                 <StudentForm />
-                <p>Student list:</p>
-                <StudentList />
+
+                <Route exact path="/allStudents">
+                    <p>Student list:</p>
+                    <StudentList />
+                </Route>
             </Router>
         </div>
     );
