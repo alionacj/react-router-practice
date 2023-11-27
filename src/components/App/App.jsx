@@ -4,6 +4,7 @@ import './App.css';
 import StudentForm from '../StudentForm/StudentForm.jsx';
 import StudentList from '../StudentList/StudentList.jsx';
 import Nav from '../Nav/Nav.jsx';
+import About from '../About/About.jsx';
 
 
 function App() {
@@ -13,10 +14,12 @@ function App() {
                 <header className="App-header">
                 <h1 className="App-title">GitHub Student List</h1>
                 </header>
-                <Nav />
                 <br/>
+                <Nav />
+                <Route exact path="/about">
+                    <About /> 
+                </Route>
                 <StudentForm />
-
                 <p>Student list:</p>
                 <StudentList />
             </Router>
